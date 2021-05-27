@@ -7,8 +7,8 @@ A simple tool to remove titles, tags and subtiltes from multiple mkv containers 
 # Setup
 - Add the MKVToolNix Folder to your PATH
 - Edit Line 01: "PATH\TO\YOUR\CLEANUP\FOLDER"
-- Edit Line 32: RegEx pattern or leave it as it is
-- Edit Line 42: RegEx pattern or leave it as it is
+- Edit Line 32: RegEx patterns or leave them as they are
+- Edit Line 42: RegEx patterns or leave them as they are
 
 # Usage
 Run the script via **Right-Click -> "Run with PowerShell"** or **PowerShell** or **CMD**

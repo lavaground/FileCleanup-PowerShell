@@ -1,7 +1,7 @@
 ﻿param (
   [string]$SearchFor = "(^.*S[\d]+E[\d]+).*", 
   [string]$ReplaceWith = "`$1.720p.x265.mkv",
-  [string]$FileExtension = "*.mkv",
+  [string]$FileExtension = "mkv",
   [string]$RootFolder = "PATH\TO\YOUR\CLEANUP\FOLDER\"
 )
 
@@ -12,18 +12,18 @@ $NoFilesString = "No files found."
 $CompletedString = "Operation completed."
 
 Write-Output $SeperatorString
-Write-Output "Enumerating all files in $RootFolder"
+Write-Output "Enumerating all $FileExtension files in $RootFolder"
 Write-Output $SeperatorString
-$Files = Get-ChildItem $RootFolder -Recurse -Include $FileExtension
+$Files = Get-ChildItem $RootFolder -Recurse -Include *.$FileExtension
 
 if ($Files.Count -gt 0) {
   $Files | ForEach-Object {
     Write-Output "Cleaning titles in file $_."
     Write-Output $SeperatorString
-    mkvpropedit.exe "$_" -d title
-    mkvpropedit.exe "$_" -e track:v1 -d name
-    mkvpropedit.exe "$_" -e track:a1 -d name
-    mkvpropedit.exe "$_" -e track:s1 -d name
+    mkvpropedit "$_" -d title
+    mkvpropedit "$_" -e track:v1 -d name
+    mkvpropedit "$_" -e track:a1 -d name
+    mkvpropedit "$_" -e track:s1 -d name
     Write-Output $SeperatorString
     Write-Output "Title cleaning in file $_ is done."
     Write-Output $SeperatorString

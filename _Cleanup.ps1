@@ -46,12 +46,12 @@ if ($Files.Count -gt 0) {
     }
     else {
       Write-Output "$_ has no subtitles, renaming file."
-      Write-Output $SeperatorString
       $NewName = $_.FullName -replace $SearchFor, $ReplaceWith
       if ($_.FullName -ne $NewName) {
         Rename-Item -Path $_.FullName -NewName $NewName
       }
       else {
+        Write-Output $SeperatorString
         Write-Output $NoRenamesString
       }
     }

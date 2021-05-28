@@ -1,8 +1,9 @@
-# MKVCleanup-PowerShell
-A simple tool to remove titles, tags and subtiltes from multiple mkv containers and regex-rename afterwards
+# FileCleanup-PowerShell
+A simple tool to remove titles, tags and subtiltes from multiple video files and regex search and replace afterwards
 
 # Requirements
-- [MKVToolNix](https://mkvtoolnix.download/downloads.html#windows) - Download and install or use Winget: ```winget install mkvtoolnix ```
+  **MKV**
+  - [MKVToolNix](https://mkvtoolnix.download/downloads.html#windows) - Download and install or use Winget: ```winget install mkvtoolnix ```
 
 # Setup
 - Add the MKVToolNix Folder to your PATH
@@ -29,12 +30,12 @@ Run the script via:
 - **CMD** ```powershell .\_Cleanup.ps1```
 
     # Optional Parameters
-    - ```-FileExtension <string>```
-    - ```-ReplaceWith <string>```
-    - ```-SearchFor <string>```
-    - ```-RootFolder <string>```
+    - ```-FileExtension extension```
+    - ```-ReplaceWith regex```
+    - ```-SearchFor regex```
+    - ```-RootFolder PATH\TO\ROOT\FOLDER```
 
 # Notes
-- This script will delete all titles, tags and subtitles from the files in a specified folder and regex-rename them.
+- This script will delete all titles, tags and subtitles from the files in a specified folder and regex search and replace the names.
 - The RegEx is set for TV Show filenames: ```*.S**E**.720p.x265.mkv```.
 - **CAUTION**: Do not use this on your movies/tv folder directly, it might remove desired subtitles.

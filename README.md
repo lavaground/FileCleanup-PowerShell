@@ -3,7 +3,8 @@ A simple tool to remove titles, tags and subtiltes from multiple video files and
 
 # Requirements
   **MKV**
-  - [MKVToolNix](https://mkvtoolnix.download/downloads.html#windows) - Download and install or use Winget: ```winget install mkvtoolnix ```
+  - [MKVToolNix](https://mkvtoolnix.download/downloads.html#windows) - Download and install 
+  - Or use [WinGet:](https://github.com/microsoft/winget-cli) ```winget install mkvtoolnix```
 
 # Setup
 - Add the MKVToolNix Folder to your PATH

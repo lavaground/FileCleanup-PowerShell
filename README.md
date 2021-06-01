@@ -1,5 +1,5 @@
 # FileCleanup-PowerShell
-A simple tool to remove titles, tags and subtiltes from multiple video files and regex search and replace afterwards
+A simple tool to remove titles, tags & subtiltes and RegEx search & replace the filename from multiple video files in a specified folder.
 
 # Requirements
   **MKV**

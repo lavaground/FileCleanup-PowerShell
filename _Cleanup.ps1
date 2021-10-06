@@ -30,7 +30,7 @@ if ($Files.Count -gt 0) {
     Write-Output "Searching for subtiltes in $_."
     Write-Output $SeperatorString
     $File = mkvmerge -i $_
-    $HasSub = $File[-1].Contains("subtitles")
+    $HasSub = $File[3].Contains("subtitles")
     if ($HasSub) {
       Write-Output "$_ has subtitles."
       Write-Output $SeperatorString

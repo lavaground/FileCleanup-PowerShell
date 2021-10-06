@@ -1,7 +1,10 @@
 # FileCleanup-PowerShell
 A simple tool to remove titles, tags & subtiltes and RegEx search & replace the filename from multiple video files in a specified folder.
 
-**CAUTION**: Do not use this on your movies/tv folder directly, it might remove desired subtitles **and/or -->delete your files<--**.
+# **CAUTION**:
+Do not use this on your movies/tv folder directly, it might:
+- remove desired subtitles 
+- **and/or -->!!!delete your files!!!<--**
 
 # Requirements
   **MKV**
@@ -41,4 +44,8 @@ Run the script via:
 # Notes
 - This script will delete all titles, tags and subtitles from the files in a specified folder and regex search and replace the names.
 - The RegEx is set for TV Show filenames: ```*.S**E**.720p.x265.mkv```.
-- **CAUTION**: Do not use this on your movies/tv folder directly, it might remove desired subtitles and/or delete your files.
+
+# **CAUTION AGAIN**: 
+Do not use this on your movies/tv folder directly, it might:
+- remove desired subtitles 
+- **and/or -->!!!delete your files!!!<--**
